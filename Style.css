@@ -73,9 +73,9 @@
 /* Texto superpuesto */
 .text-overlayDos {
     font-size: 3em;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(123, 121, 121, 0.5);
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 40px;
@@ -96,7 +96,7 @@
 /* Texto sobre la sección */
 .text-overlayDos {
     font-size: 36px;
-    color: #333;
+    color: #000000;
     margin-bottom: 40px;
     font-weight: bold;
 }
@@ -131,4 +131,71 @@
     .mosaic-grid {
         column-count: 1; /* Una columna en pantallas pequeñas */
     }
+}
+.amigos-section {
+    background-image: url(https://th.bing.com/th/id/OIP.0UvGGNTWT8cKbHQ6UsOkKwHaNK?&rs=1&pid=ImgDetMain); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    padding: 20px;
+    color: rgb(255, 0, 0); /* Para asegurar que el texto sea legible sobre la imagen */
+}
+
+.mosaic-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mosaic-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(83, 79, 79, 0.3);
+}
+
+.fuera-contexto-section {
+    background-image: url(https://motsmusic.es/wp-content/uploads/2020/04/Mots.jpg); /* Cambia por la ruta de tu imagen */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    padding: 30px;
+    text-align: center;
+    color: white; /* Esto asegura que el texto sea visible sobre la imagen */
+}
+
+.fuera-contexto-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mayor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.polaroid-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.polaroid-item {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    width: 200px;
+    transform: rotate(-3deg); /* Añadir un ligero giro para la estética Polaroid */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid-item:hover {
+    transform: rotate(0deg); /* Elimina el giro cuando el usuario pasa el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.polaroid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.polaroid-description {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
 }
