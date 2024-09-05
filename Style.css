@@ -48,8 +48,8 @@
 
     .text-overlay {
     position: absolute;
-    top: 18%;
-    left: 45%;
+    top: 25%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3em;
@@ -58,13 +58,77 @@
     text-align: center;
     font-family: Show Glyph Boxes;
     }
-    .text-overlayDos {
-    background-image: url(Fotos/abstract-background-vivid-liquify-texture-colourful-wallpaper-free-free-photo.jpg);
-    height: 1000px;
-    background-size: cover;
+   /* Sección de relatos */
+/* Sección de relatos */
+.relatos-section {
+    position: relative;
     width: 100%;
-    color: beige;
-    font-family: Show Glyph Boxes;
-    font-size: 60px;
+    height: auto;
+    overflow: hidden;
+    padding: 50px;
+    background: url(https://th.bing.com/th/id/R.1b03ef4223e13991d6a4f4ebc3beda8d?rik=Ued4EmVRVOheJQ&riu=http%3a%2f%2fwww.jbdegez.com%2fwp-content%2fuploads%2f2014%2f04%2f331-735x1030.jpg&ehk=0oxje2slv0rlC6mjfEJR8pv%2fjfhHjKwURc8agIabDYA%3d&risl=&pid=ImgRaw&r=0) no-repeat center center;
+    background-size: cover;
+}
+
+/* Texto superpuesto */
+.text-overlayDos {
+    font-size: 3em;
+    color: white;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+/* Estilo para la sección de Relatos */
+.relatos-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.relatos-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Texto sobre la sección */
+.text-overlayDos {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Contenedor de las imágenes tipo mosaico */
+.mosaic-grid {
+    column-count: 3; /* Ajusta este número según las columnas que quieras */
+    column-gap: 15px; /* Espacio entre las columnas */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mosaic-item {
+    break-inside: avoid; /* Evita que las imágenes se rompan entre columnas */
+    margin-bottom: 15px; /* Espacio debajo de cada imagen */
+}
+
+.mosaic-item img {
+    width: 100%;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para las imágenes */
+}
+
+/* Responsividad */
+@media screen and (max-width: 1024px) {
+    .mosaic-grid {
+        column-count: 2; /* Dos columnas en pantallas medianas */
     }
+}
+
+@media screen and (max-width: 768px) {
+    .mosaic-grid {
+        column-count: 1; /* Una columna en pantallas pequeñas */
+    }
+}
